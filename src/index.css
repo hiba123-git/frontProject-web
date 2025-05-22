@@ -1,0 +1,56 @@
+/* src/index.css */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --sidebar-width: 18rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body.light {
+  --bg-color: white;
+  --text-color: black;
+  --input-bg-color: white;
+  --input-text-color: black;
+}
+
+body.dark {
+  --bg-color: #1a202c;
+  --text-color: white;
+  --input-bg-color: #2d3748;
+  --input-text-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+input {
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
